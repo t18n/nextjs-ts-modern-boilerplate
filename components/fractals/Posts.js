@@ -1,24 +1,25 @@
+import { useEffect, useState } from 'react';
 import PostLink from '../core/PostLink';
 
-const posts = [
-  {
-    id: "richest-man-in-babylon",
-    title: "The richest man in Babylon",
-  },
-  {
-    id: "find-your-why",
-    title: "Find your why"
-  },
-  {
-    "id": "win-friends-and-influence-people",
-    title: "How to win friends and influence people"
-  }
-];
-
 export default function Blog() {
+  const [posts, setPosts] = useState(null);
+
+  useEffect(() => {
+    async function getShows() {
+      const res = await fetch('https://api.tvmaze.com/search/shows?q=x-men');
+      const data = await res.json();
+
+      console.log(`Show data fetched. Count: ${data.length}`);
+
+      setPosts(await data.map(entry => entry.show));
+    };
+
+    getShows();
+  }, [setPosts]);
+
   return (
     <ul>
-      {posts.map(post => <PostLink post={post} />)}
+      {posts && posts.map(post => <PostLink key={post.id} post={post} />)}
     </ul>
   );
 };
