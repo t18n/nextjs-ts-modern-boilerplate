@@ -1,6 +1,11 @@
+import { ReactNode, FunctionComponent } from 'react';
 import Link from 'next/link';
 
-export default function Layout({ children }) {
+interface Props {
+  children: ReactNode;
+}
+
+const Layout: FunctionComponent<Props> = ({ children }) => {
   return (
     <div>
       <nav>
@@ -17,3 +22,5 @@ export default function Layout({ children }) {
     </div>
   );
 }
+
+export default Layout;
