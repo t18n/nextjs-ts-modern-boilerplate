@@ -4,9 +4,11 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "dev": "next",
+    "start:build": "next start -p $PORT",
+    "start:dev": "next",
+    "start:static": "serve out",
     "build": "next build",
-    "start": "next start -p $PORT"
+    "export": "yarn build && next export"
   },
   "dependencies": {
     "isomorphic-unfetch": "^3.0.0",
@@ -16,5 +18,8 @@
   },
   "engines": {
     "node": ">= 12"
+  },
+  "devDependencies": {
+    "serve": "^11.3.0"
   }
 }
