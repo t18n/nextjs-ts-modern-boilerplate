@@ -35,3 +35,4 @@
 - Prettier
 - Eslint
 - Git hooks
+- Code splitting with Dynamic import

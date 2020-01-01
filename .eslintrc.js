@@ -15,6 +15,7 @@ module.exports = {
   },
   rules: {
     'react/react-in-jsx-scope': 'off', // Next automatically import React to the top of the file
+    'react/display-name': 'off',
   },
   overrides: [
     {

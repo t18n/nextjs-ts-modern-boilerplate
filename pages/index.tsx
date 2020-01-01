@@ -1,6 +1,10 @@
 import Layout from '~/components/fractals/Layout';
-import PostList from '~/components/fractals/Posts';
 import { NextPage } from 'next';
+import dynamic from 'next/dynamic';
+
+const PostList = dynamic(() => import('~/components/fractals/Posts'), {
+  loading: () => <p>Loading posts...</p>,
+});
 
 const Index: NextPage = () => (
   <Layout>
