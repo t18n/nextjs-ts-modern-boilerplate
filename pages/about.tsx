@@ -1,6 +1,7 @@
 import Layout from '~/components/fractals/Layout';
+import { NextPage } from 'next';
 
-export default function About() {
+const About: NextPage = () => {
   return (
     <Layout>
       <div>
@@ -8,4 +9,6 @@ export default function About() {
       </div>
     </Layout>
   );
-}
+};
+
+export default About;
