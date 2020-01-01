@@ -19,6 +19,8 @@
 
 - Clone the project.
   - Without custom server `git clone git@github.com:turbothinh/nextjs-ts-custom-server.git`
+  - With custom server `git clone -b with-custom-server git@github.com:turbothinh/nextjs-ts-custom-server.git`
+- Remove git and initialize your own `rm -rf .git && git init`
 - Install dependencies `yarn`
 - Develop `yarn start:dev`
 - Build app and serve `yarn build`
