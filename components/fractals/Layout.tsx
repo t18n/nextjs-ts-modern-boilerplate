@@ -16,11 +16,9 @@ const Layout: FunctionComponent<Props> = ({ children }) => {
           <a>About</a>
         </Link>
       </nav>
-      <div>
-        {children}
-      </div>
+      <div>{children}</div>
     </div>
   );
-}
+};
 
 export default Layout;

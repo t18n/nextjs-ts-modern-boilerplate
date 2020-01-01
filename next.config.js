@@ -1,4 +1,3 @@
-
 const fetch = require('isomorphic-unfetch');
 
 const generatePages = async () => {
@@ -12,11 +11,11 @@ const generatePages = async () => {
 module.exports = {
   exportTrailingSlash: true,
 
-  // 
+  //
   exportPathMap: async () => {
     const paths = {
       '/': { page: '/' },
-      '/about': { page: '/about' }
+      '/about': { page: '/about' },
     };
 
     const pages = await generatePages();
@@ -26,6 +25,5 @@ module.exports = {
     });
 
     return paths;
-  }
-
+  },
 };

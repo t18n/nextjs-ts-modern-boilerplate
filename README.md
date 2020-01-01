@@ -26,8 +26,10 @@
 - Build app and serve `yarn build`
 
 ## Features
+
 - Custom server
 - Export static page
 - Dynamic page
 - Typescript intergration
 - Absolute path
+- Prettier

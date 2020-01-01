@@ -12,14 +12,10 @@ export default function Blog() {
       console.log(`Show data fetched. Count: ${data.length}`);
 
       setPosts(await data.map(entry => entry.show));
-    };
+    }
 
     getShows();
   }, [setPosts]);
 
-  return (
-    <ul>
-      {posts && posts.map(post => <PostLink key={post.id} post={post} />)}
-    </ul>
-  );
-};
+  return <ul>{posts && posts.map(post => <PostLink key={post.id} post={post} />)}</ul>;
+}

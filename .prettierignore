@@ -1,0 +1,5 @@
+.cache
+.next
+public
+out
+node_modules

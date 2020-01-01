@@ -3,8 +3,8 @@ import Link from 'next/link';
 
 interface Props {
   post: {
-    id: string,
-    name: string,
+    id: string;
+    name: string;
   };
   key: string;
 }
