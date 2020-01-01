@@ -3,6 +3,10 @@
     "target": "esnext",
     "module": "esnext",
     "jsx": "preserve",
+    "baseUrl": ".",
+    "paths": {
+      "~/*": ["./*"]
+    },
     "lib": [
       "dom",
       "es2017"

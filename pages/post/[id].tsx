@@ -1,5 +1,5 @@
 import fetch from 'isomorphic-unfetch';
-import Layout from '../../components/fractals/Layout';
+import Layout from '~/components/fractals/Layout';
 
 export default function Post(props) {
   return (

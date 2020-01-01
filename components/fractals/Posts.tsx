@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import PostLink from '../core/PostLink';
+import PostLink from '~/components/core/PostLink';
 
 export default function Blog() {
   const [posts, setPosts] = useState(null);
