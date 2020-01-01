@@ -36,3 +36,4 @@
 - Eslint
 - Git hooks
 - Code splitting with Dynamic import
+- AMP page available (e.g. **about** page. Append `?amp=1` to URL to see AMP version)

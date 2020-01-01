@@ -10,6 +10,7 @@ const generatePages = async () => {
 
 module.exports = {
   exportTrailingSlash: true,
+  poweredByHeader: false, // disable `x-powered-by` to the request header
 
   //
   exportPathMap: async () => {
