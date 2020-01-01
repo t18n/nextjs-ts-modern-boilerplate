@@ -33,3 +33,5 @@
 - Typescript intergration
 - Absolute path
 - Prettier
+- Eslint
+- Git hooks
